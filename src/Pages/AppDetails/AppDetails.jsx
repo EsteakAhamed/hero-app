@@ -1,29 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../../Data/data.json';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LabelList } from 'recharts';
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import {
+    BarChart,
+    Bar,
+    XAxis,
+    YAxis,
+    Tooltip,
+    ResponsiveContainer,
+    LabelList
+} from 'recharts';
 
 const AppDetails = () => {
     const { id } = useParams();
     const app = data.find(item => item.id === parseInt(id));
     const [installed, setInstalled] = useState(false);
 
-    if (!app) {
-        return <div className="text-center py-20 text-gray-600">App not found</div>;
-    }
+    useEffect(() => {
+        const installedApps = JSON.parse(localStorage.getItem('installedApps')) || [];
+        setInstalled(installedApps.some(a => a.id === app?.id));
+    }, [app]);
 
     const handleInstall = () => {
+        const installedApps = JSON.parse(localStorage.getItem('installedApps')) || [];
+        installedApps.push(app);
+        localStorage.setItem('installedApps', JSON.stringify(installedApps));
         setInstalled(true);
         toast.success(`${app.title} installed successfully!`);
     };
 
-    const chartData = [...app.ratings].reverse(); 
+    if (!app) return <div className="text-center py-20">App not found</div>;
+
+    const totalRatings = app.ratings.reduce((sum, r) => sum + r.count, 0);
+    const chartData = [...app.ratings].reverse(); // 5-star on top
 
     return (
         <div className="bg-white text-gray-800 min-h-screen py-12 px-6">
-            {/* App Info Section */}
+            {/* App Info */}
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 mb-12">
                 <img src={app.image} alt={app.title} className="w-32 h-32 object-cover rounded-xl" />
                 <div className="text-center md:text-left">
@@ -32,12 +46,13 @@ const AppDetails = () => {
                     <div className="flex flex-wrap gap-4 justify-center md:justify-start text-sm text-gray-700 mb-4">
                         <span>⬇️ {app.downloads.toLocaleString()} downloads</span>
                         <span>⭐ {app.ratingAvg} ({app.reviews.toLocaleString()} reviews)</span>
+                        <span>📦 {app.size} MB</span>
                     </div>
                     <button
                         onClick={handleInstall}
                         disabled={installed}
                         className={`px-6 py-2 rounded-lg shadow transition ${installed
-                                ? 'bg-gray-400 text-white cursor-not-allowed'
+                                ? 'bg-gray-400 cursor-not-allowed'
                                 : 'bg-green-500 hover:bg-green-600 text-white'
                             }`}
                     >
