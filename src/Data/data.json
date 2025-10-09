@@ -1,0 +1,332 @@
+[
+    {
+        "id": 1,
+        "title": "Forest: Focus For Productivity",
+        "companyName": "Seekrtech",
+        "image": "https://play-lh.googleusercontent.com/forest-app-icon",
+        "description": "Stay focused, be present, and plant virtual trees to reduce distractions and boost productivity.",
+        "size": 45,
+        "reviews": 1200000,
+        "ratingAvg": 4.9,
+        "downloads": 9000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1000
+            },
+            {
+                "name": "2 star",
+                "count": 2000
+            },
+            {
+                "name": "3 star",
+                "count": 5000
+            },
+            {
+                "name": "4 star",
+                "count": 15000
+            },
+            {
+                "name": "5 star",
+                "count": 1150000
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "SmPlan: ToDo List With Reminder",
+        "companyName": "productive.io",
+        "image": "https://cdn-icons-png.flaticon.com/512/1581/1581942.png",
+        "description": "A smart planner that helps you stay organized with reminders, lists, and progress tracking.",
+        "size": 291,
+        "reviews": 54000,
+        "ratingAvg": 4.9,
+        "downloads": 8000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 800
+            },
+            {
+                "name": "2 star",
+                "count": 1500
+            },
+            {
+                "name": "3 star",
+                "count": 2500
+            },
+            {
+                "name": "4 star",
+                "count": 6000
+            },
+            {
+                "name": "5 star",
+                "count": 46000
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "FLIP - Focus Timer For Study",
+        "companyName": "RinaSoft",
+        "image": "https://play-lh.googleusercontent.com/flip-focus-timer-icon",
+        "description": "Boost study focus using FLIP's Pomodoro-based timer and productivity tracker.",
+        "size": 52,
+        "reviews": 670000,
+        "ratingAvg": 4.8,
+        "downloads": 9000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3000
+            },
+            {
+                "name": "2 star",
+                "count": 4000
+            },
+            {
+                "name": "3 star",
+                "count": 7000
+            },
+            {
+                "name": "4 star",
+                "count": 20000
+            },
+            {
+                "name": "5 star",
+                "count": 636000
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Pomocat - Cute Pomodoro Timer",
+        "companyName": "Pomocat Studio",
+        "image": "https://cdn-icons-png.flaticon.com/512/616/616408.png",
+        "description": "A cute cat-themed Pomodoro timer that helps you stay productive with adorable animations.",
+        "size": 60,
+        "reviews": 32000,
+        "ratingAvg": 4.7,
+        "downloads": 5000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 700
+            },
+            {
+                "name": "2 star",
+                "count": 1000
+            },
+            {
+                "name": "3 star",
+                "count": 2000
+            },
+            {
+                "name": "4 star",
+                "count": 5000
+            },
+            {
+                "name": "5 star",
+                "count": 23300
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Time Planner: Schedule & Tasks",
+        "companyName": "ALMA Tech",
+        "image": "https://cdn-icons-png.flaticon.com/512/2920/2920244.png",
+        "description": "Organize your daily routines, manage tasks, and visualize time blocks for better productivity.",
+        "size": 48,
+        "reviews": 45000,
+        "ratingAvg": 4.8,
+        "downloads": 9000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 600
+            },
+            {
+                "name": "2 star",
+                "count": 1000
+            },
+            {
+                "name": "3 star",
+                "count": 2000
+            },
+            {
+                "name": "4 star",
+                "count": 7000
+            },
+            {
+                "name": "5 star",
+                "count": 34400
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Morning Habits - Daily Routine",
+        "companyName": "MindSet Apps",
+        "image": "https://cdn-icons-png.flaticon.com/512/1048/1048940.png",
+        "description": "Build productive morning habits and track progress for a more successful day.",
+        "size": 50,
+        "reviews": 78000,
+        "ratingAvg": 4.6,
+        "downloads": 7000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 1000
+            },
+            {
+                "name": "2 star",
+                "count": 2000
+            },
+            {
+                "name": "3 star",
+                "count": 5000
+            },
+            {
+                "name": "4 star",
+                "count": 15000
+            },
+            {
+                "name": "5 star",
+                "count": 55000
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Focus Plant: Pomodoro Forest",
+        "companyName": "Seekrtech",
+        "image": "https://play-lh.googleusercontent.com/focusplant-icon",
+        "description": "Grow virtual plants by focusing on tasks — a fun twist on the Pomodoro technique.",
+        "size": 65,
+        "reviews": 500000,
+        "ratingAvg": 4.9,
+        "downloads": 10000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2000
+            },
+            {
+                "name": "2 star",
+                "count": 3000
+            },
+            {
+                "name": "3 star",
+                "count": 6000
+            },
+            {
+                "name": "4 star",
+                "count": 15000
+            },
+            {
+                "name": "5 star",
+                "count": 474000
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Alarmy - Alarm Clock & Sleep",
+        "companyName": "Delight Room Co.",
+        "image": "https://play-lh.googleusercontent.com/alarmy-icon",
+        "description": "A smart alarm that forces you to get out of bed and start your day productively.",
+        "size": 89,
+        "reviews": 230000,
+        "ratingAvg": 4.8,
+        "downloads": 15000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 3000
+            },
+            {
+                "name": "2 star",
+                "count": 5000
+            },
+            {
+                "name": "3 star",
+                "count": 8000
+            },
+            {
+                "name": "4 star",
+                "count": 20000
+            },
+            {
+                "name": "5 star",
+                "count": 197000
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Todoist: To-Do List & Planner",
+        "companyName": "Doist",
+        "image": "https://play-lh.googleusercontent.com/todoist-icon",
+        "description": "Plan your day, manage projects, and achieve more with this clean and intuitive to-do list app.",
+        "size": 70,
+        "reviews": 980000,
+        "ratingAvg": 4.8,
+        "downloads": 30000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 5000
+            },
+            {
+                "name": "2 star",
+                "count": 8000
+            },
+            {
+                "name": "3 star",
+                "count": 12000
+            },
+            {
+                "name": "4 star",
+                "count": 20000
+            },
+            {
+                "name": "5 star",
+                "count": 935000
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Focus To-Do: Pomodoro Timer",
+        "companyName": "SuperElement Soft",
+        "image": "https://play-lh.googleusercontent.com/focus-todo-icon",
+        "description": "Combines Pomodoro timer with task management — track your time and achieve goals.",
+        "size": 55,
+        "reviews": 240000,
+        "ratingAvg": 4.7,
+        "downloads": 12000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 2000
+            },
+            {
+                "name": "2 star",
+                "count": 4000
+            },
+            {
+                "name": "3 star",
+                "count": 8000
+            },
+            {
+                "name": "4 star",
+                "count": 25000
+            },
+            {
+                "name": "5 star",
+                "count": 202000
+            }
+        ]
+    }
+]
