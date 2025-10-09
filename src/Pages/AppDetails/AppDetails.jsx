@@ -19,7 +19,7 @@ const AppDetails = () => {
         toast.success(`${app.title} installed successfully!`);
     };
 
-    const chartData = [...app.ratings].reverse(); // 5 star at top
+    const chartData = [...app.ratings].reverse(); 
 
     return (
         <div className="bg-white text-gray-800 min-h-screen py-12 px-6">
