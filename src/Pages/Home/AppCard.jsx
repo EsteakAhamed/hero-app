@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function AppCard({ app }) {
+    const navigate = useNavigate();
+
     return (
         <div
             className="bg-white rounded-2xl shadow-md hover:shadow-xl p-4 transition duration-200 cursor-pointer"
-            onClick={() => (window.location.href = `/app/${app.id}`)} // Navigate to details page
+            onClick={() => navigate(`/app/${app.id}`)}
         >
             <img
                 src={app.image}
