@@ -38,8 +38,8 @@ const Installation = () => {
                     onChange={e => setSortOrder(e.target.value)}
                     className="border border-gray-300 rounded px-4 py-2"
                 >
-                    <option value="high">Sort By Size: High-Low</option>
-                    <option value="low">Sort By Size: Low-High</option>
+                    <option value="high">Sort By Downloads: High-Low</option>
+                    <option value="low">Sort By Downloads: Low-High</option>
                 </select>
             </div>
 

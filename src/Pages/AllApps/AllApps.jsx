@@ -1,15 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import data from '../../Data/data.json';
-import appErrorImage from '../../assets/app-error.png'; 
+import appErrorImage from '../../assets/app-error.png';
+import Loader from '../../Components/Loader/Loader';
 
 const AllApps = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const [filteredApps, setFilteredApps] = useState(data);
+    const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
-    const filteredApps = data.filter(app =>
-        app.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    useEffect(() => {
+        setLoading(true);
+        const timeout = setTimeout(() => {
+            const results = data.filter(app =>
+                app.title.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+            setFilteredApps(results);
+            setLoading(false);
+        }, 400); 
+
+        return () => clearTimeout(timeout);
+    }, [searchTerm]);
 
     const handleReload = () => {
         setSearchTerm('');
@@ -39,8 +51,10 @@ const AllApps = () => {
                 />
             </div>
 
-            {/* App Grid or Error */}
-            {filteredApps.length > 0 ? (
+            {/* App Grid or Loader/Error */}
+            {loading ? (
+                <Loader />
+            ) : filteredApps.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
                     {filteredApps.map(app => (
                         <div
